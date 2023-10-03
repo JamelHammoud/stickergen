@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "bot": "yarn playwright install && tsc && dotenv -e .env node build/bot.js",
+    "bot": "yarn playwright install && yarn playwright install-deps && tsc && dotenv -e .env node build/bot.js",
     "commands": "tsc && dotenv -e .env node build/commands.js"
   },
   "dependencies": {
